@@ -1,0 +1,14 @@
+torch
+torchvision
+numpy
+opencv-python
+Pillow
+tqdm
+pytorch-msssim
+safetensors
+timm
+tensorboard
+tensorboardX
+pytorch_wavelets
+fvcore
+matplotlib

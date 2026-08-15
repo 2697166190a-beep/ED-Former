@@ -1,0 +1,37 @@
+# Datasets (do not redistribute third-party datasets)
+data/
+
+# Training artifacts
+logs/
+runs/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Environments and editors
+.venv/
+venv/
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local agent/tool metadata
+.agents/
+.claude/
+.codex/
+
+# Keep metric CSV files in Git, but publish the complete output images as a
+# GitHub Release asset to keep clones lightweight.
+results/**/imgs/
+ED-Former-complete-results.tar.gz
+ED-Former-complete-results.zip
