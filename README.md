@@ -33,7 +33,7 @@ The model has 0.866 M parameters and requires 7.36 G MACs for a 256 × 256 input
 The code is written in Python and requires PyTorch. A CUDA-enabled GPU is required by the current testing script.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ED-Former.git
+git clone https://github.com/2697166190a-beep/ED-Former.git
 cd ED-Former
 
 conda create -n edformer python=3.10 -y
