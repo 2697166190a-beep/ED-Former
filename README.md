@@ -26,7 +26,29 @@ ED-Former is an extremely lightweight Transformer for single-image dehazing. It 
 | SOTS-outdoor (RESIDE-OUT) | **33.92** | **0.9827** |
 | RS-Haze | **39.61** | **0.9715** |
 
-The model has 0.866 M parameters and requires 7.36 G MACs for a 256 × 256 input. Metric CSV files are provided in [`results`](results/). The complete per-image outputs are available from the [latest GitHub Release](../../releases/latest).
+The model has 0.866 M parameters and requires 7.36 G MACs for a 256 × 256 input.
+
+## Qualitative comparison
+
+<p align="center">
+  <a href="figs/Qualitative%20Comparison.png">
+    <img src="figs/Qualitative%20Comparison.png" alt="Qualitative comparison with state-of-the-art dehazing methods" width="100%">
+  </a>
+</p>
+
+Qualitative comparisons with state-of-the-art dehazing methods on indoor, outdoor, and real-world hazy images. Click the image to view fine-grained details at full resolution.
+
+## Results
+
+The benchmark summaries are included directly in this repository:
+
+| Benchmark | Metric file | Dehazed images |
+|:--|:--|:--|
+| SOTS-indoor | [`results/RESIDE-IN/ed-former/38.21 \| 0.9942.csv`](results/RESIDE-IN/ed-former/38.21%20%7C%200.9942.csv) | `results/RESIDE-IN/ed-former/imgs/` |
+| SOTS-outdoor | [`results/RESIDE-OUT/ed-former/33.92 \| 0.9827.csv`](results/RESIDE-OUT/ed-former/33.92%20%7C%200.9827.csv) | `results/RESIDE-OUT/ed-former/imgs/` |
+| RS-Haze | [`results/RSHaze/ed-former/39.61 \| 0.9715.csv`](results/RSHaze/ed-former/39.61%20%7C%200.9715.csv) | `results/RSHaze/ed-former/imgs/` |
+
+To keep the Git repository lightweight, the complete per-image outputs for all three benchmarks are packaged as `ED-Former-complete-results.tar.gz` in the [latest GitHub Release](../../releases/latest). After running `test.py`, newly generated dehazed images and per-image metrics are saved under `results/<DATASET>/ed-former/` using the same layout.
 
 ## Installation
 
@@ -160,4 +182,4 @@ If this work is useful for your research, please cite:
 
 ## Acknowledgements
 
-We thank the authors and maintainers of the public datasets and open-source projects used in this work.
+Parts of this codebase are based on the excellent [DehazeFormer](https://github.com/IDKiro/DehazeFormer) implementation. We sincerely thank Yuda Song, Zhuqing He, Hui Qian, and Xin Du for making their work publicly available. We also thank the authors and maintainers of the public datasets and other open-source projects used in this work.
