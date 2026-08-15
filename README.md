@@ -114,9 +114,6 @@ data/
 │   ├── train/
 │   │   ├── hazy/
 │   │   └── GT/
-│   ├── valid/
-│   │   ├── hazy/
-│   │   └── GT/
 │   └── test/
 │       ├── hazy/
 │       └── GT/
@@ -188,20 +185,7 @@ These commands are also collected in [`run.sh`](run.sh). Training will not overw
 
 To use a different dataset root, add `--data_dir /path/to/data` to a training or testing command. You can similarly change output locations with `--save_dir`, `--log_dir`, and `--result_dir` where supported.
 
-## Limitations
 
-The compact parameter budget limits the model's ability to reconstruct information that is almost completely obscured. Under extremely dense or spatially non-uniform haze, restored images may contain residual haze or locally over-smoothed fine structures.
-
-<details>
-<summary>Example failure cases on O-HAZE</summary>
-
-<p align="center">
-  <a href="compareohaze/failure_case_comparison.png">
-    <img src="compareohaze/failure_case_comparison.png" alt="ED-Former failure cases under extremely dense haze" width="100%">
-  </a>
-</p>
-
-</details>
 
 ## Repository structure
 
@@ -242,7 +226,7 @@ Parts of this codebase are based on the excellent [DehazeFormer](https://github.
 
 ## Contact
 
-For technical questions, please open a [GitHub issue](https://github.com/2697166190a-beep/ED-Former/issues). For research correspondence, contact Prof. Yi Xiang at `cqxiangyi@cqust.edu.cn`.
+For technical questions, please open a [GitHub issue](https://github.com/2697166190a-beep/ED-Former/issues). 
 
 ## License
 
